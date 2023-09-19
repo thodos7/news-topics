@@ -1,0 +1,40 @@
+[debug] javaOptions: Vector(-Djna.nosys=true)
+[debug] Forking tests - parallelism = false
+[debug] Create a single-thread test executor
+[debug] Runner for com.novocode.junit.JUnitFramework produced 3 initial tasks for 3 tests.
+[debug]   Running TaskDef(controllers.HomeControllerTest, sbt.ForkMain$AnnotatedFingerscan@18daab03, false, [SuiteSelector])
+[info] Test run started
+[info] Test controllers.HomeControllerTest.testIndex started
+[debug] Test controllers.HomeControllerTest.testIndex finished, took 8.888 sec
+[info] Test run finished: 0 failed, 0 ignored, 1 total, 8.903s
+[debug]     Produced 0 nested tasks and 1 events.
+[debug]   Running TaskDef(controllers.NewsCommentsTest, sbt.ForkMain$AnnotatedFingerscan@2188ee6, false, [SuiteSelector])
+[info] Test run started
+[info] Test controllers.NewsCommentsTest.testAddRejectComment started
+[debug] Test controllers.NewsCommentsTest.testAddRejectComment finished, took 1.428 sec
+[info] Test controllers.NewsCommentsTest.testAddUpdateSimpleComment started
+[debug] Test controllers.NewsCommentsTest.testAddUpdateSimpleComment finished, took 0.773 sec
+[info] Test controllers.NewsCommentsTest.testAddSimpleComment started
+[debug] Test controllers.NewsCommentsTest.testAddSimpleComment finished, took 0.646 sec
+[info] Test controllers.NewsCommentsTest.testAddApproveComment started
+[debug] Test controllers.NewsCommentsTest.testAddApproveComment finished, took 0.629 sec
+[info] Test run finished: 0 failed, 0 ignored, 4 total, 3.478s
+[debug]     Produced 0 nested tasks and 4 events.
+[debug]   Running TaskDef(controllers.NewsTest, sbt.ForkMain$AnnotatedFingerscan@2e272653, false, [SuiteSelector])
+[info] Test run started
+[info] Test controllers.NewsTest.testSubmitRejectSubmitPublish started
+[debug] Test controllers.NewsTest.testSubmitRejectSubmitPublish finished, took 0.851 sec
+[info] Test controllers.NewsTest.testRejectNewWithRejectionReason started
+[debug] Test controllers.NewsTest.testRejectNewWithRejectionReason finished, took 0.597 sec
+[info] Test controllers.NewsTest.testAddNewDeleteImmediately started
+[debug] Test controllers.NewsTest.testAddNewDeleteImmediately finished, took 0.524 sec
+[info] Test controllers.NewsTest.testPublishNewWithComment started
+[debug] Test controllers.NewsTest.testPublishNewWithComment finished, took 0.519 sec
+[info] Test run finished: 0 failed, 0 ignored, 4 total, 2.493s
+[debug]     Produced 0 nested tasks and 4 events.
+[debug] Summary for JUnit not available.
+[info] Passed: Total 9, Failed 0, Errors 0, Passed 9
+[debug] Passed tests:
+[debug] 	controllers.NewsCommentsTest
+[debug] 	controllers.HomeControllerTest
+[debug] 	controllers.NewsTest
