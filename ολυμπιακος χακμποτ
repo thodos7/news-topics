@@ -13,7 +13,7 @@ api = Client(username, password)
 
 # ID του ποστ που θέλεις να σχολιάσεις
 post_id = 'https://www.instagram.com/p/C6yBTxxISDV/'
-comment_text = '@lef_ch'
+comment_text = '@lef_ch @_michalo_'
 
 while True:
     try:
