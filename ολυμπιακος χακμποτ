@@ -3,17 +3,17 @@ import time
 import os
 
 # Φόρτωση διαπιστευτηρίων από το αρχείο περιβάλλοντος
-username = os.getenv('INSTAGRAM_USERNAME')
-password = os.getenv('INSTAGRAM_PASSWORD')
-app_id = os.getenv('INSTAGRAM_APP_ID')
-app_secret = os.getenv('INSTAGRAM_APP_SECRET')
+username = os.getenv('tho_dos')
+password = os.getenv('thodoris1925osfp!')
+app_id = os.getenv('7521636781283774')
+app_secret = os.getenv('4979fae4d30d76505ccc62ecca6cb506')
 
 # Είσοδος στο Instagram
 api = Client(username, password)
 
 # ID του ποστ που θέλεις να σχολιάσεις
-post_id = 'POST_ID_HERE'
-comment_text = 'Το σχόλιο σου εδώ'
+post_id = 'https://www.instagram.com/p/C6yBTxxISDV/'
+comment_text = '@lef_ch'
 
 while True:
     try:
