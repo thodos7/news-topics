@@ -1,0 +1,27 @@
+from instagram_private_api import Client, ClientCompatPatch
+import time
+import os
+
+# Φόρτωση διαπιστευτηρίων από το αρχείο περιβάλλοντος
+username = os.getenv('INSTAGRAM_USERNAME')
+password = os.getenv('INSTAGRAM_PASSWORD')
+app_id = os.getenv('INSTAGRAM_APP_ID')
+app_secret = os.getenv('INSTAGRAM_APP_SECRET')
+
+# Είσοδος στο Instagram
+api = Client(username, password)
+
+# ID του ποστ που θέλεις να σχολιάσεις
+post_id = 'POST_ID_HERE'
+comment_text = 'Το σχόλιο σου εδώ'
+
+while True:
+    try:
+        # Κάνε το σχόλιο στο ποστ
+        api.comment(post_id, comment_text)
+        print("Έγινε σχόλιο επιτυχώς!")
+        time.sleep(60)  # Περίμενε 1 λεπτό πριν το επόμενο σχόλιο
+    except Exception as e:
+        print("Σφάλμα:", e)
+        # Πιθανή επανάληψη του κώδικα σε περίπτωση σφάλματος
+        time.sleep(60)  # Περίμενε 1 λεπτό πριν την επανάληψη
